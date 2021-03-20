@@ -1,0 +1,34 @@
+@import '../../App.scss';
+
+.join-page{
+    background-color: $base-background;
+    height: 90vh;
+    display: grid;
+    place-items: center;
+    .join-form{
+        width: 70vw;
+        height: 70vh;
+        background-color: $third-background;
+        opacity: .8;
+        display: grid;
+        grid-template-columns: .4fr .6fr;
+        .image-data{
+            display: grid;
+            place-items: center;
+            canvas{
+                width: 300px;
+                height: 300px;
+                background-color: #ffffff;
+                border-radius: 5px;
+            }
+        }
+        .other-data{
+            p{
+                text-align: center;
+                font-weight: 600;
+                font-size: 1.3rem;
+                color: #abf98c;
+            }
+        }
+    }
+}
