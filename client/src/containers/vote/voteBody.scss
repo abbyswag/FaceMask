@@ -1,0 +1,21 @@
+@import '../../App.scss';
+
+.vote-body{
+    background-color: $base-background;
+    height: 90vh;
+    .opts{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 2rem 3rem;
+        .btns{
+            display: flex;
+            justify-content: space-around;
+            width: 30%;
+            align-items: center;
+        }
+    }
+    .cards{
+        
+    }
+}

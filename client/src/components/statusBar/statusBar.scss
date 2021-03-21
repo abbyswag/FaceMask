@@ -1,0 +1,23 @@
+@import '../../App.scss';
+
+.status-bar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .2rem;
+    background-color: $btn-background;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 5px;
+    .lable{
+        margin: 0 .5rem;
+        font-weight: 600;
+        font-size: 1.1rem;
+    }
+    .status{
+        margin-left: .5rem;
+        background-color: $base-background;
+        color: #ffffff;
+        padding: .3rem 2rem;
+    }
+}

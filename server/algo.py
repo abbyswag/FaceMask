@@ -46,5 +46,5 @@ class DataStructure:
             results.append(topUser)
         return results
     
-    def getRandomUsers(self,n = 6):
+    def getRandomUsers(self,n = 1):
         return random.choices(self.users, k = n)

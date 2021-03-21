@@ -19,6 +19,7 @@ class FormBody extends React.Component{
     handleImage(event){
         this.setState({imgURL: URL.createObjectURL(event.target.files[0])})
     }
+
     handleSubmit(event){
         event.preventDefault()
         const data = new FormData(event.target)
@@ -52,8 +53,10 @@ class FormBody extends React.Component{
                         />
                         <div className = 'opts'>
                             <input
-                            type = 'file'
+                            type= 'file'
+                            name= 'image'
                             onChange={this.handleImage}
+                            required
                             />
                         </div>
                     </div>
@@ -73,7 +76,7 @@ class FormBody extends React.Component{
                             />
                             <input
                             type='text'
-                            name='name'
+                            name='career'
                             placeholder='Career'
                             required
                             />                            
