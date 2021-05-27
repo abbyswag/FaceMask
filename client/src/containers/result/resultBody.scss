@@ -1,7 +1,6 @@
 @import '../../App.scss';
 
 .result-body{
-    // background-color: $base-background;
     background-image: url('../../assets/img/home-gif3.gif');
     background-size: cover;
     background-repeat: no-repeat;
@@ -12,35 +11,13 @@
         text-align: center;
         padding: 1rem;
     }
-    .search{
-        display: flex;
-        justify-content: center;
-        text-align: center;
-        padding: 1rem;
-        input{
-            padding: .5rem;
-            font-size: .9rem;
-            // background-color: $base-background;
-            // border: solid $btn-background 2px;
-            color: $secondary-color;
-            width: 30%;
-            border-radius: 3px 0 0 3px;
-        }
-        .btn{
-            border-radius: 0 3px 3px 0;
-            transition: all .4s;
-        }
-        .btn:hover{
-            background-color: $extra-color;
-        }
-        .btn:active{
-            border: inset $secondary-background 2px;
-        }
-    }
     .lable{
         margin-top: 1rem;
-        color: $extra-color;
-        font-size: 2rem;
+        color: #ffcac7;
+        font-size: 3rem;
+        font-family: monospace;
+        font-variant-caps: all-petite-caps;
+        font-weight: 900;
         text-align: center;
         padding: 1rem;
     }
@@ -60,12 +37,6 @@
         }
         .notice{
             display: none;
-        }
-        .search{
-            margin-top: 2rem;
-            input{
-                width: 60%;
-            }
         }
     }
 }

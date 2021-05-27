@@ -7,17 +7,30 @@
     border-bottom: solid $primary-border 2px;
     border-top: solid $primary-border 2px;
     display: grid;
+    align-items: center;
     grid-template-columns: 200px 1fr;
     .app-name{
         font-size: 1.4rem;
         font-weight: 600;
-        // margin-left: 2rem;
+        margin-left: -3rem;
         opacity: .8;
         transition: opacity .4s;
         cursor: pointer;
     }
     .app-name:hover{
         opacity: 1;
+    }
+    .logo-wrapper{
+        display: none;
+        justify-content: flex-end;
+        margin-right: 2rem;
+        .logo{
+            background-image: url('../../assets/img/ELSOVV.PNG');
+            width: 2rem;
+            height: 2rem;
+            background-size: cover;
+            border-radius: 50%;
+        }
     }
     .nav-bar{
         display: grid;
@@ -43,6 +56,9 @@
     .header{
         .nav-bar{
             display: none;
+        }
+        .logo-wrapper{
+            display: flex;
         }
     }
 }

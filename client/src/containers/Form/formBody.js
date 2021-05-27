@@ -1,6 +1,7 @@
 import React from 'react'
 import {Redirect} from 'react-router-dom'
 import Canvas from '../../components/canvas/canvas'
+import TextField from '@material-ui/core/TextField'
 import './formBody.scss'
 
 const careers = require('../../assets/data/career.json')
@@ -47,11 +48,6 @@ class FormBody extends React.Component{
                 <form className = 'join-form'
                 onSubmit={this.handleSubmit}
                 >
-                    {/* <div className='note'>
-                        Already Joined: <span>
-                            <div>Login</div>
-                        </span>
-                    </div> */}
                     <div className = 'image-data'>
                         <Canvas
                         imgURL = {this.state.imgURL}
@@ -67,18 +63,46 @@ class FormBody extends React.Component{
                     </div>
                     <div className = 'other-data'>
                         <div className='input-wrapper'>
-                            <input
+                            {/* <input
                             type='text'
                             name='name'
                             placeholder='User Name'
                             required
+                            /> */}
+                            <TextField
+                            id="outlined-basic" 
+                            label="User Name" 
+                            variant="outlined"
+                            type="text"
+                            name='name'
+                            required
+                            style={{
+                                backgroundColor: '#f7f7f7',
+                                borderRadius: '5px',
+                                margin: '.5rem 0',
+                                width: '100%'
+                            }}
                             />
-                            <input
+                            <TextField
+                            id="outlined-basic" 
+                            label="Email Address" 
+                            variant="outlined"
+                            type="text"
+                            name='email'
+                            required
+                            style={{
+                                backgroundColor: '#f7f7f7',
+                                borderRadius: '5px',
+                                margin: '.5rem 0',
+                                width: '100%'
+                            }}
+                            />
+                            {/* <input
                             type='text'
                             name='email'
                             placeholder='Email Address'
                             required
-                            />
+                            /> */}
                             <select
                             className='select'
                             name='career'>

@@ -2,6 +2,7 @@
     "data":[
         "Select Career",
         "Developer","Programmer","Musician","Dancer","Painter","Enterprenur",
-        "Officer","Politician","Scientist","Comedian","Teacher"
+        "Officer","Politician","Scientist","Comedian","Teacher","Gym Trainer",
+        "Model","Analyst","Reformer","Trader","FreeLancer","Writer","Doctor","Unemployed"
     ]
 }

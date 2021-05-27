@@ -22,6 +22,10 @@ class Header extends React.Component{
                         ForTeller
                     </Link>
                 </div>
+                <div className='logo-wrapper'>
+                    <div className='logo'>
+                    </div>
+                </div>
                 <div className = 'nav-bar'>
                     {this.navOpts.map((opt,index) => {
                         return(

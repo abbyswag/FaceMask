@@ -11,8 +11,7 @@ class VoteBody extends React.Component{
             users: [],
         }
         this.btnsData= [
-            ['Join Contest', '/user/register'],
-            ['shuffle', '/vote']
+            ['Join Contest', '/user/register']
         ]
     }
 

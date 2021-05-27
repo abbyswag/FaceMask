@@ -1,4 +1,5 @@
 import React from 'react'
+// const img1 = require('../../assets/img/WhatsApp Image 2021-05-27 at 13.49.19.jpeg')
 
 class Canvas extends React.Component{
     constructor(props){
